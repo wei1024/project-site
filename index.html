@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
     <script src="https://kit.fontawesome.com/b65759261e.js" crossorigin="anonymous"></script>
@@ -12,6 +13,7 @@
 
 
     <link rel="stylesheet" href="style.css" />
+    
 </head>
 
 <body>
@@ -33,12 +35,13 @@
             </div>
             <div class="selection">
                 <ul>
-                    <li><a href="#">a</a></li>
-                    <li><a href="#">b</a></li>
-                    <li><a href="#">c</a></li>
-                    <li><a href="#">a</a></li>
-                    <li><a href="#">b</a></li>
-                    <li><a href="#">c</a></li>
+                    <li><a href="#">Atmarksol</a></li>
+                    <li><a href="#">Brand</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Information</a></li>
+                    <li><a href="#">Access</a></li>
+                    <li><a href="#">Company Profile</a></li>
+                    <li><a href="#">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -68,16 +71,16 @@
                 <div class="box">
                     <img src="images/logo.png" alt="logo" />
                     <h3>会社の使命</h3>
-                    <div style="text-align: center;">
+                    <p style="text-align: center;">
                         次世代のエンジニア<br>教育を全力で行ってまいります。
-                    </div>
+                    </p>
                 </div>
             </div>
-            <div class="content1">
+            <div class="content end">
                 <div class="content-background">
 
                 </div>
-                <div class="box">
+                <div class="box-end">
                     <img src="images/logo.png" alt="logo" />
                     <h3>会社の使命</h3>
                     <div style="text-align: center;">
@@ -93,8 +96,8 @@
                     <img src="images/logo.png" alt="logo" />
                     <h3>会社の使命</h3>
                     <div class="circleTxt"></div>
-                    <div class="circleTxt"></div>
-                    <div class="circleTxt"></div>
+                    <div class="circleTxt down"></div>
+                    <div class="circleTxt down"></div>
 
                 </div>
             </div>
@@ -107,24 +110,19 @@
                 <span>ブランド</span>
             </div>
             <div class="slider">
-                <div style="background-color: blue; height:256px; width:512px;">
-                    <h3>1</h3>
+                <div style="background-color: blue;">
+                    <img style="height: 512px;width:100%;" src="images/slick1.jpg" alt="logo" />
                 </div>
-                <div style="background-color: rgb(0, 255, 213); height:256px; width:512px;">
-                    <h3>2</h3>
+                <div style="background-color: rgb(0, 255, 213);">
+                    <img style="height: 512px;width:100%;" src="images/slick2.jpg" alt="logo" />
                 </div>
-                <div style="background-color: rgb(195, 0, 255); height:256px; width:512px;">
-                    <h3>3</h3>
+                <div style="background-color: rgb(195, 0, 255);">
+                    <img style="height: 512px;width:100%;" src="images/slick3.jpg" alt="logo" />
                 </div>
-                <div style="background-color: rgb(255, 153, 0); height:256px; width:512px;">
-                    <h3>4</h3>
+                <div style="background-color: rgb(255, 153, 0);">
+                    <img style="height: 512px; width:100%;" src="images/slick4.jpg" alt="logo" />
                 </div>
-                <div style="background-color: rgb(255, 0, 0); height:256px; width:512px;">
-                    <h3>5</h3>
-                </div>
-                <div style="background-color: rgb(217, 255, 0); height:256px; width:512px;">
-                    <h3>6</h3>
-                </div>
+               
             </div>
 
         </div>
@@ -134,32 +132,55 @@
 
 
         <script type="text/javascript">
-            $('.slider').slick({
-                centerMode: true,
-                centerPadding: '60px',
-                slidesToShow: 3,
-                responsive: [{
-                        breakpoint: 768,
-                        settings: {
-                            arrows: true,
-                            centerMode: true,
-                            centerPadding: '40px',
-                            slidesToShow: 3,
-
-                        }
-                    },
-                    {
-                        breakpoint: 480,
-                        settings: {
-                            arrows: true,
-                            centerMode: true,
-                            centerPadding: '40px',
-                            slidesToShow: 1
-                        }
-                    }
-                ]
-            });
+            // $('.slider').slick({
+            //     centerMode: true,
+            //     centerPadding: '60px',
+            //     slidesToShow: 3,
+            //     responsive: [{
+            //             breakpoint: 768,
+            //             settings: {
+            //                 arrows: true,
+            //                 centerMode: true,
+            //                 centerPadding: '40px',
+            //                 slidesToShow: 3
+                           
+            //             }
+            //         },
+            //         {
+            //             breakpoint: 480,
+            //             settings: {
+            //                 arrows: true,
+            //                 centerMode: true,
+            //                 centerPadding: '40px',
+            //                 slidesToShow: 1
+                            
+                            
+            //             }
+            //         }
+            //     ]
+            // });
         </script>
+         <script>$(function() {
+            $('.slider').slick({
+              autoplay: false,
+              dots: false,
+              centerMode: true,
+              slidesToShow: 1,
+              focusOnSelect:true,
+              centerPadding:'20%',
+              responsive: [{
+                breakpoint: 768,
+                settings: {
+                  slidesToShow: 1,
+                  fade: false,
+                    swipeToSlide:true,
+                    centerPadding:'30px',
+                    swipe:true
+                }
+              }]
+            });
+          });
+          </script>
     </section>
     <section>
 

@@ -49,7 +49,7 @@
                 autoplay: false,
                 autoplaySpeed: 3000,
                 centerMode: false,
-                centerPadding: '50px',
+                centerPadding: '0',
                 cssEase: 'ease',
                 customPaging: function(slider, i) {
                     return $('<button type="button" />').text(i + 1);
