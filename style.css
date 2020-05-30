@@ -1319,7 +1319,7 @@ nav {
     }
 
     .history .content .list {
-        width: 60%;
+        width: 800px;
         padding: 80px;
         background-color: rgba(255, 95, 95, 0.308);
         border-radius: 20px;
