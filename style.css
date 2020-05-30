@@ -221,8 +221,19 @@ nav {
 }
 
 @keyframes scrl-down {
-    from {top: 75%;}
-    to {top: 95%;}
+    0% { 
+        opacity: 0;
+        -webkit-transform: scale(1) translate(0, -10px);
+        transform: scale(1) translate(0, -10px);	
+    }
+      60% { 
+        opacity: 1;
+    }
+    100% { 
+        opacity: 0;
+        -webkit-transform: translate(0, 10px);
+        transform: scale(1) translate(0, 10px);	
+    }
 }
 
 
